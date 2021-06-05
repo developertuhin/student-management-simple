@@ -1,0 +1,5 @@
+
+
+SET @autoid:=0;
+UPDATE students SET sid=@autoid:=(@autoid+1);
+ALTER TABLE students AUTO_INCREMENT=1;
